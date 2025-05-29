@@ -1,3 +1,4 @@
-project_base: aesd-assignments
-    package/aesd-assignments
+name: aesd_assignments
+desc: AESD assignments external tree
+license: GPL-2.0+
 
