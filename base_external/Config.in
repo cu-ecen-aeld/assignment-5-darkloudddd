@@ -1,1 +1,3 @@
-EOF
+menu "AESD externals"
+endmenu
+
