@@ -1,6 +1,2 @@
-#
-# Stub Kconfig file for AESD_ASSIGNMENTS external
-#
-
 menu "AESD externals"
 endmenu
