@@ -1,4 +1,5 @@
 name: AESD_ASSIGNMENTS
+path: base_external
 desc: AESD assignments external tree
 license: GPL-2.0+
 
