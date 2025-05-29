@@ -1,0 +1,12 @@
+cat > base_external/Config.in << 'EOF'
+#
+# Stub Kconfig file for AESD_ASSIGNMENTS external
+#
+
+config BR2_EXTERNAL_AESD_ASSIGNMENTS
+    bool
+
+menu "AESD externals"
+endmenu
+EOF
+
