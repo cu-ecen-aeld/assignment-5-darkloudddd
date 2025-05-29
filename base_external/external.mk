@@ -1,4 +1,5 @@
-# external.mk — bring in our external packages
-include $(BR2_EXTERNAL_PROJECT_BASE_PATH)/external.desc
-include $(BR2_EXTERNAL_PROJECT_BASE_PATH)/Config.in
+# base_external/external.mk
+#
+# Include our aesd-assignments package definition
+include $(BR2_EXTERNAL_AESD_ASSIGNMENTS_PATH)/package/aesd-assignments/aesd-assignments.mk
 
