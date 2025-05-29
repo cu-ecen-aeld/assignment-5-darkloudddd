@@ -1,3 +1,4 @@
 menu "AESD externals"
+  source "package/aesd-assignments/Config.in"
 endmenu
 
