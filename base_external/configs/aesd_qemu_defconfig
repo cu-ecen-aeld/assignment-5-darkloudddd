@@ -1,4 +1,5 @@
 # Architecture
+BR2_arm=y
 BR2_aarch64=y
 BR2_cortex_a53=y
 
