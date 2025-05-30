@@ -21,8 +21,9 @@ BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_6_1=y
 
 # Linux kernel
 BR2_LINUX_KERNEL=y
-BR2_LINUX_KERNEL_USE_DEFCONFIG=y
-BR2_LINUX_KERNEL_DEFCONFIG="virt_defconfig"
+# Use our custom AArch64 virt config
+BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="board/qemu/aarch64-virt/linux.config"
+BR2_LINUX_KERNEL_USE_CUSTOM_CONFIG=y
 
 # host-qemu for gitlab testing
 BR2_PACKAGE_HOST_QEMU=y
