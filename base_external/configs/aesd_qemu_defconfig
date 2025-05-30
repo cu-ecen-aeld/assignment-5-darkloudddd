@@ -28,3 +28,17 @@ BR2_LINUX_KERNEL_NEEDS_HOST_OPENSSL=y
 # host-qemu for gitlab testing
 BR2_PACKAGE_HOST_QEMU=y
 BR2_PACKAGE_HOST_QEMU_SYSTEM_MODE=y
+
++# Build our aesd-assignments package
++BR2_PACKAGE_AESD_ASSIGNMENTS=y
+
+# Generate an ext4 rootfs (instead of ext2)
+BR2_TARGET_ROOTFS_EXT4=y
+BR2_TARGET_ROOTFS_EXT4_4=y
+BR2_TARGET_ROOTFS_EXT4_SIZE=64M
+
+# Build a Linux kernel using the in-tree virt_defconfig
+BR2_LINUX_KERNEL=y
+BR2_LINUX_KERNEL_USE_DEFCONFIG=y
+BR2_LINUX_KERNEL_DEFCONFIG="virt_defconfig"
+
