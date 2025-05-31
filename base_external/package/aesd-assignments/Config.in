@@ -1,6 +1,9 @@
+#
+#  base_external/package/aesd-assignments/Config.in
+#
 config BR2_PACKAGE_AESD_ASSIGNMENTS
-    bool "aesd-assignments"
+    bool "aesd assignments (finder + writer)"
     help
-      Builds and installs the finder, writer and tester scripts
-      from your Assignment 3 repo into the target filesystem.
+      This package builds the AESD assignment programs (writer + finder)
+      and installs them into /usr/bin (finder → uses /etc/finder-app/conf).
 
