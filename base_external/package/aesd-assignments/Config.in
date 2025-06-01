@@ -1,9 +1,6 @@
-#
-#  base_external/package/aesd-assignments/Config.in
-#
 config BR2_PACKAGE_AESD_ASSIGNMENTS
-    bool "aesd assignments (finder + writer)"
-    help
-      This package builds the AESD assignment programs (writer + finder)
-      and installs them into /usr/bin (finder → uses /etc/finder-app/conf).
+	bool "aesd-assignments"
+	help
+	  Includes the writer executable, finder.sh and tester.sh in the kernel image.
+	  Used to understand buildroot external trees and package builds.
 
