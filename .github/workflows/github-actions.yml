@@ -8,9 +8,14 @@ on:
 jobs:
     full-test:
         container: cuaesd/aesd-autotest:24-assignment4-buildroot
-        runs-on: self-hosted
+        runs-on: ubuntu-latest
         timeout-minutes: 120
         steps:
+          - name: Debug SSH Key
+            run: |
+              echo "${{ secrets.SSH_PRIVATE_KEY }}" | wc -c  # Check key length
+              echo "${{ secrets.SSH_PRIVATE_KEY }}" | head -n 1  # Print first line
+        
           - uses: actions/checkout@v2
           - name: Checkout submodules
             run: git submodule update --init --recursive
