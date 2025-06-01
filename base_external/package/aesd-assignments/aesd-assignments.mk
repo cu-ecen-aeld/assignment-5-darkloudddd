@@ -33,7 +33,7 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 
     # 3) Copy the finder.sh script as “finder”
     $(INSTALL) -D -m 0755 $(@D)/finder-app/finder.sh \
-                   $(TARGET_DIR)/usr/bin/finder
+                   $(TARGET_DIR)/usr/bin/finder.sh
 
     # 4) Copy finder-test.sh into /usr/bin
     $(INSTALL) -D -m 0755 $(@D)/finder-app/finder-test.sh \
